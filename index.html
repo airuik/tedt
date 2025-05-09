@@ -11,6 +11,9 @@
             background-image: url('https://example.com/city-line.jpg');
             background-position: center 30%;
         }
+        .desktop-nav {
+            margin-left: auto; /* 关键代码：使导航靠右 */
+        }
         .mobile-menu {
             max-height: 0;
             overflow: hidden;
@@ -35,7 +38,7 @@
                 </a>
 
                 <!-- 桌面导航菜单 -->
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex desktop-nav items-center space-x-8">
                     <a href="#home" class="hover:text-red-200 transition">首页</a>
                     <a href="#products" class="hover:text-red-200 transition">产品中心</a>
                     <a href="#services" class="hover:text-red-200 transition">服务专区</a>
